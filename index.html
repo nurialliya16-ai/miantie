@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!-- menggunakan library populer bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <!-- desain warna, block dan gaya menyesuaikan desain figma -->
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- ========= START TOPBAR ========= -->
+    <!-- class p artinya padding (jarak antar ruang dengan contentnya) milik bootstrap -->
+    <!-- pt artinya padding top, pb artinya padding bottom -->
+    <div id="topbar" class="bg-softcream pt-4 pb-4">
+        <!-- container adalah class bootstrap -->
+        <div class="container">
+            <!-- class row untuk membuat kolom -->
+            <div class="row">
+                <!-- kolom 1 -->
+                <div class="col">
+                    <div id="logo" class="height-50">
+                        <div class="vcenter">
+                            <img src="images/miantie-logo.png">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- kolom 2 -->
+                <div class="col">
+                    <div class="height-50">
+                        <div class="vcenter">
+                            <div id="topmenu">
+                                <div class="menu">
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="products.html">Products</a></li>
+                                        <li><a href="location.html">Location</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- kolom 3 -->
+                <div class="col">
+                    <div id="cart" class="height-50">
+                        <div class="vcenter">
+                            <img src="images/cart.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ========= END TOPBAR ========= -->
+
+    <!-- ========= START HIGHLIGHT ========= -->
+    <div id="highlight" class="bg-softcream">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 text-center">
+                    <div class="highlight-block height-700">
+                        <div class="vcenter">
+                            <h3 class="color-brown fw-bold">Hangat, lembut, dan selalu bikin rindu.</h3>
+                            <p class="lead color-brown">Setiap gigita kue Bingka kami membawa pulang kenangan masa kecil - freshly baked setiap hari untuk kamu.</p>
+                            <img src="images/bika.png" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 text-center">
+                    <div class="highlight-block height-700">
+                        <div class="vcenter">
+                            <h1 class="color-brown fw-bold">Kenangan Manis dalam Setiap Potong.</h1>
+                            <img src="images/yoga.png" class="img-fluid" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 text-center">
+                    <div class="highlight-block height-700">
+                        <div class="vcenter">
+                            <h3 class="color-brown fw-bold">Setiap Lapisan Cerita Rasa.</h3>
+                            <p class="lead color-brown">Perpaduan sempurna tekstur lembut dan aroma khas yang melekat di memori.</p>                            
+                            <a hreg="#" class="general-button">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ========= END HIGHLIGHT ========= -->
+   
+    <!-- ========= START WHY CHOOSE US ========= -->
+    <div id="why-choose-us" class="text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <h2 class="color-brown fw-bold">Mengapa memilih Miantie.id?</h2>
+                    <p class="lead">Miantie.id telah hadir sejak 2020, memproduksi kue binkai khas Melayu dengan konsep home industry yang mengutamakan rasa autentik dan kualitas terbaik. Berfokus pada penjualan online, Miantie.id ingin menghadirkan pengalaman menikmati kue binkai yang hangat, lembut, dan baru keluar dari oven.</p>
+                    <a hreg="#" class="general-button">Cari tahu Miantie lebih lanjut</a>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- ========= END WHY CHOOSE US ========= -->
+
+    <!-- ========= START PRODUCT LIST ========= -->
+    <div id="product-list" class="text-center">
+        <div class="w-1000">
+            <div class="container">
+                <h2 class="color-brown fw-bold">Daftar Produk Miantie</h2>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <img src="images/bingka-keju.png" class="img-fluid">
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <img src="images/bingka-coklat.png" class="img-fluid">
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <img src="images/bingka-original.png" class="img-fluid">
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <img src="images/bingka-kismis.png" class="img-fluid">
+                    </div>
+                </div>
+                <br /><br />
+                <a href="#" class="general-button">Lihat produk</a>
+            </div>
+        </div>
+    </div>
+    <!-- ========= END PRODUCT LIST ========= -->
+
+    <!-- ========= START ROUTE STORE ========= -->
+    <div id="route-store" class="text-center">
+        <div class="container">
+            <div class="w-1000">
+                <h2 class="color-brown fw-bold">Coba Hitung Jarakmu dari Miantie yuk!</h2>
+                <br />
+                <a href="#" class="general-button">Maps toko</a>
+                <br /><br /><br />
+                <img src="images/distance.png" class="img-fluid" style="width: 100px;">
+                <br /><br /><br />
+                <div class="row">
+                    <div class="col">
+                        <div class="height-50">
+                            <div class="vcenter">
+                                <img src="images/ride.png" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="height-50">
+                            <div class="vcenter">
+                                <input type="text" placeholder="masukkan alamat" class="general-input">
+                                <br /><br />
+                                <a href="#" class="general-button">Hitung Ongkir</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="height-50">
+                            <div class="vcenter">
+                                <img src="images/car.png" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ========= END ROUTE STORE ========= -->
+
+    <!-- ========= START CUSTOMERS SAYS ========= -->
+    <div id="customer-says" class="text-center">
+        <div class="container">
+            <h2 class="color-brown fw-bold">Whats Our Customer Says</h2>
+            <br /><br />
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="images/testi-01.png" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <img src="images/testi-02.png" class="img-fluid">
+                </div>
+                <div class="col-md-4">
+                    <img src="images/testi-03.png" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ========= END CUSTOMERS SAYS ========= -->
+
+    <!-- ========= START FOOTER ========= -->
+    <div id="footer" class="text-center">
+        <div class="container">
+            <img src="images/miantie-logo-2.png" class="img-fluid">
+            <br /><br />
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Homepage</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Location</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <br /><br />
+            <div class="menu">
+                <ul>
+                    <li><a href="#"><img src="images/tiktok.png"></a></li>
+                    <li><a href="#"><img src="images/call.png"></a></li>
+                    <li><a href="#"><img src="images/instagram.png"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- ========= END FOOTER ========= -->
+    
+    <!-- menggunakan library populer bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
