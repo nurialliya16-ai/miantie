@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'MochiyPop';
+    src: url('fonts/MochiyPopOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 .bg-softcream {
     background-color: #E8DDD2;    
 }
@@ -177,4 +191,83 @@ input.general-input:focus {
 }
 .white-box h3 {
     font-size: 40px;
+}
+
+#registration {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: 100vh;
+}
+.registration-logo {
+    width: 280px;
+    width: 100%;
+}
+.form-label {
+    font-family: 'Righteous', cursive;
+    font-size: 1.2rem;
+    color: #000;
+    margin-bottom: 0.5rem;
+}
+.form-input {
+    width: 480px;
+    height: 55px;
+    padding: 12px 20px;
+    background-color: #F5EFE9;
+    border: 2px solid #8B6F47;
+    border-radius: 25px;
+    font-size: 1rem;
+    color: #333;
+    outline: none;
+}
+.form-input:focus {
+    background-color: #F5EFE9;
+    border-color: #6b492d;
+}
+.form-input::placeholder {
+    color: #B8B8B8;
+}
+.btn-daftar {
+    display: inline-block;
+    background-color: #D4B896;
+    border: 3px solid #000;
+    border-radius: 30px;
+    padding: 12px 80px;
+    font-family: 'Righteous', cursive;
+    font-size: 1.5rem;
+    color: #7D4711;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn-daftar:hover {
+    background-color: #C4A886;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.btn-login {
+    display: inline-block;
+    background-color: #D4B896;
+    border: 3px solid #000;
+    border-radius: 30px;
+    padding: 12px 80px;
+    font-family: 'Righteous', cursive;
+    font-size: 1.5rem;
+    color: #7D4711;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+h1.main-title {
+    font-size: 30px;
+    font-family:MochiyPop;
+}
+.font-poppins {
+    font-family: Poppins;
+}
+
+.font-mochiypop {
+    font-family:MochiyPop;
 }

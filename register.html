@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!-- menggunakan library populer bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <!-- desain warna, block dan gaya menyesuaikan desain figma -->
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- ========= START TOPBAR ========= -->
+    <!-- class p artinya padding (jarak antar ruang dengan contentnya) milik bootstrap -->
+    <!-- pt artinya padding top, pb artinya padding bottom -->
+    <div id="topbar" class="bg-softcream pt-4 pb-4">
+        <!-- container adalah class bootstrap -->
+        <div class="container">
+            <!-- class row untuk membuat kolom -->
+            <div class="row">
+                <!-- kolom 1 -->
+                <div class="col">
+                    <div id="logo" class="height-50">
+                        <div class="vcenter">
+                            <img src="images/miantie-logo.png">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- kolom 2 -->
+                <div class="col">
+                    <div class="height-50">
+                        <div class="vcenter">
+                            <div id="topmenu">
+                                <div class="menu">
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="products.html">Products</a></li>
+                                        <li><a href="location.html">Location</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- kolom 3 -->
+                <div class="col">
+                    <div id="cart" class="height-50">
+                        <div class="vcenter">
+                            <img src="images/cart.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ========= END TOPBAR ========= -->
+   
+    <!-- ========= START REGISTRATION SECTION ========= -->
+    <div id="registration" class="bg-softcream pt-5 pb-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-5">
+                    <!-- Logo Section -->
+                    <div class="text-center mb-4">
+                        <img src="images/miantie-logo-2.png" alt="Miantie Logo" class="mb-3" style="width: 280px;">
+                    </div>
+
+                    <!-- Registration Form -->
+                    <form id="registrationForm">
+                        <!-- Nama Lengkap -->
+                        <div class="mb-4">
+                            <label for="fullname" class="form-label fw-bold">Nama lengkap</label>
+                            <input type="text" class="form-control form-input" id="fullname" placeholder="masukkan nama lengkap" required>
+                        </div>
+
+                        <!-- Alamat -->
+                        <div class="mb-4">
+                            <label for="address" class="form-label fw-bold">Alamat</label>
+                            <input type="text" class="form-control form-input" id="address" placeholder="masukkan alamat" required>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="mb-4">
+                            <label for="email" class="form-label fw-bold">Email</label>
+                            <input type="email" class="form-control form-input" id="email" placeholder="masukkan email" required>
+                        </div>
+
+                        <!-- Username -->
+                        <div class="mb-4">
+                            <label for="username" class="form-label fw-bold">Username</label>
+                            <input type="text" class="form-control form-input" id="username" placeholder="masukkan username" required>
+                        </div>
+
+                        <!-- Password -->
+                        <div class="mb-4">
+                            <label for="password" class="form-label fw-bold">Password</label>
+                            <input type="password" class="form-control form-input" id="password" placeholder="masukkan password" required>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <div class="text-center mt-5">
+                            <button type="submit" class="btn btn-daftar">Daftar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ========= END REGISTRATION SECTION ========= -->
