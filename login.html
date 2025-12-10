@@ -71,17 +71,17 @@
                     </div>
 
                     <!-- login Form -->
-                    <form id="login Form">
+                    <form id="login Form" onsubmit="return login()"> 
                         <!-- username -->
                         <div class="mb-4">
                             <label for="username" class="form-label fw-bold">Username</label>
-                            <input type="text" class="form-control form-input" id="username" placeholder="masukkan username" required>
+                            <input type="text" class="form-control form-input" id="username" name="username" placeholder="masukkan username" required>
                         </div>
 
                         <!-- Password -->
                         <div class="mb-4">
                             <label for="password" class="form-label fw-bold">Password</label>
-                            <input type="text" class="form-control form-input" id="password" placeholder="masukkan password" required>
+                            <input type="password" class="form-control form-input" id="password" name="password" placeholder="masukkan password" required>
                         </div>
 
                         <!-- Submit Button -->
@@ -93,4 +93,7 @@
             </div>
         </div>
     </div>
-    <!-- ========= END REGISTRATION SECTION ========= -->
+    <!-- ========= END login SECTION ========= -->
+      <script src="login.js"></script>
+</body>
+</html>
