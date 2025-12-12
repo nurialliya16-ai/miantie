@@ -3,11 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Location</title>
+    <title>Location - Miantie.id</title>
+
+    <!-- menggunakan library populer bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-</head>
-<body>
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- desain warna, block dan gaya menyesuaikan desain figma -->
+    <link href="style.css" rel="stylesheet">
+</head>
+<body class="bg-softcream">
+    <!-- ========= START TOPBAR ========= -->
+    <div id="topbar" class="bg-softcream pt-4 pb-4">
+        <div class="container">
+            <div class="row">
+                <!-- kolom 1 -->
+                <div class="col">
+                    <div id="logo" class="height-50">
+                        <div class="vcenter">
+                            <img src="images/miantie-logo.png" alt="Miantie Logo">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- kolom 2 -->
+                <div class="col">
+                    <div class="height-50">
+                        <div class="vcenter">
+                            <div id="topmenu">
+                                <div class="menu">
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about.html">About us</a></li>
+                                        <li><a href="products.html">Products</a></li>
+                                        <li><a href="location.html">Location</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- kolom 3 -->
+                <div class="col">
+                    <div id="cart" class="height-50">
+                        <div class="vcenter">
+                            <img src="images/cart.png" alt="Cart">
+                            <span class="ms-3 fw-bold">Login</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ========= END TOPBAR ========= -->
+
+    <!-- ========= START LOCATION CONTENT ========= -->
+    <div id="location-section">
+        <div class="container">
+            <!-- Title -->
+            <div class="text-center mb-5">
+                <h1 class="location-title">Alamat Pickup</h1>
+            </div>
+
+            <div class="row">
+                <!-- Kolom Kiri: Maps -->
+                <div class="col-md-6 mb-4">
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.257847453454!2d112.9000291!3d-7.6554006999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7c500470ef649%3A0x895cecc5fa415825!2sMianti%C3%A9.id!5e0!3m2!1sid!2sid!4v1765508785381!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+                <!-- Kolom Kanan: Info -->
+                <div class="col-md-6" style="padding-left: 90px;">
+                    <!-- Jam Operasional -->
+                    <div class="info-box mb-4">
+                        <h2 class="info-title">Jam Operasional</h2>
+                        
+                        <div class="schedule-item">
+                            <span class="day">Senin</span>
+                            <span class="time">: 09.00 - 16.00</span>
+                        </div>
+                        
+                        <div class="schedule-item">
+                            <span class="day">Selasa</span>
+                            <span class="time">: Tutup</span>
+                        </div>
+                        
+                        <div class="schedule-item">
+                            <span class="day">Rabu</span>
+                            <span class="time">: 09.00 - 16.00</span>
+                        </div>
+                        
+                        <div class="schedule-item">
+                            <span class="day">Kamis</span>
+                            <span class="time">: Tutup</span>
+                        </div>
+                        
+                        <div class="schedule-item">
+                            <span class="day">Jumat</span>
+                            <span class="time">: Tutup</span>
+                        </div>
+                        
+                        <div class="schedule-item">
+                            <span class="day">Sabtu</span>
+                            <span class="time">: 09.00 - 16.00</span>
+                        </div>
+                        
+                        <div class="schedule-item">
+                            <span class="day">Minggu</span>
+                            <span class="time">: Tutup</span>
+                        </div>
+                    </div>
+
+                    <!-- Alamat -->
+                    <div class="info-box mb-4">
+                        <h2 class="info-title">Alamat</h2>
+                        <p class="address-text mb-1"><strong>Gang Masjid Baiturrohmah</strong></p>
+                        <p class="address-text mb-1">Jl. Jambangan III, Purworejo</p>
+                        <p class="address-text mb-1">Kec. Purworejo</p>
+                        <p class="address-text mb-1">Kota Pasuruan</p>
+                        <p class="address-text mb-1">Jawa Timur</p>
+                        <p class="address-text mb-0">67115</p>
+                    </div>
+
+                    <!-- Button Lihat di Maps -->
+                    <div class="text-start">
+                        <a href="https://www.google.com/maps/place/Mianti%C3%A9.id/@-7.6554007,112.9000291,17z/data=!3m1!4b1!4m6!3m5!1s0x2dd7c500470ef649:0x895cecc5fa415825!8m2!3d-7.6554007!4d112.9000291!16s%2Fg%2F11xdst46x2?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D" class="btn-maps">Lihat di Maps</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ========= END LOCATION CONTENT ========= -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miantie.id - Riwayat Pembayaran</title>
+    
+    <!-- menggunakan library populer bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <!-- desain warna, block dan gaya menyesuaikan desain figma -->
+    <link href="style.css" rel="stylesheet">
+</head>
+<body class="bg-softcream">
+    <!-- ========= START TOPBAR ========= -->
+    <!-- class p artinya padding (jarak antar ruang dengan contentnya) milik bootstrap -->
+    <!-- pt artinya padding top, pb artinya padding bottom -->
+    <div id="topbar" class="bg-softcream pt-4 pb-4">
+        <!-- container adalah class bootstrap -->
+        <div class="container-fluid">
+            <!-- class row untuk membuat kolom -->
+            <div class="row">
+                <!-- kolom 1 -->
+                <div class="col">
+                    <div id="logo" class="height-50">
+                        <div class="vcenter">
+                            <img src="images/miantie-logo.png" alt="Miantie Logo">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- kolom 2 -->
+                <div class="col">
+                    <div class="height-50">
+                        <div class="vcenter">
+                            <div id="topmenu">
+                                <div class="menu">
+                                    <ul>
+                                        <li><a href="#">Pembayaran</a></li>
+                                        <li><a href="#">Pesanan</a></li>
+                                        <li><a href="#">Manajemen</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- kolom 3 -->
+                <div class="col">
+                    <div id="cart" class="height-50">
+                        <div class="vcenter fw-bold font-poppins">
+                          Admin &nbsp; &nbsp; &nbsp; <img src="images/profilelogo.png" alt="Profile"> &nbsp; &nbsp; <a onclick="logout()" href="#">logout</a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ========= END TOPBAR ========= -->
+
+    <!-- ========= START MAIN CONTENT ========= -->
+    <div class="main-content">
+        <div class="container-fluid">
+            <!-- Brand Section -->
+            <div class="brand-section" style="margin-top: 15px;">
+                <img src="images/miantie-logo-2.png" alt="Miantie Logo" style="width: 200px; height: auto;">
+            </div>
+
+            <!-- Date Filter -->
+            <div class="date-filter">
+                <span class="date-label">Dari</span>
+                <input type="text" class="date-input" placeholder="Pilih tanggal awal" onfocus="(this.type='date')">
+                
+                <span class="date-label">Hingga</span>
+                <input type="text" class="date-input" placeholder="Pilih tanggal akhir" onfocus="(this.type='date')">
+            </div>
+
+            <!-- Payment Table -->
+            <div class="payment-table-wrapper">
+                <h2 class="section-title">Riwayat Pembayaran</h2>
+                
+                <table class="payment-table">
+                    <thead>
+                        <tr>
+                            <th>Nama</th>
+                            <th>ID</th>
+                            <th>Metode bayar</th>
+                            <th>Subtotal</th>
+                            <th>Ongkir</th>
+                            <th>Diskon</th>
+                            <th>Total</th>
+                            <th>Status</th>
+                            <th>Bukti pembayaran</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Hana</td>
+                            <td>87968675</td>
+                            <td>BRI</td>
+                            <td>50.000</td>
+                            <td>-</td>
+                            <td>5.000</td>
+                            <td>45.000</td>
+                            <td class="status-berhasil">Berhasil</td>
+                            <td><button class="btn-lihat">Lihat</button></td>
+                        </tr>
+                        <tr>
+                            <td>Aliya</td>
+                            <td>54864531</td>
+                            <td>QRIS</td>
+                            <td>30.000</td>
+                            <td>5.000</td>
+                            <td>-</td>
+                            <td>35.000</td>
+                            <td class="status-dibatalkan">Dibatalkan</td>
+                            <td><button class="btn-lihat">Lihat</button></td>
+                        </tr>
+                        <tr>
+                            <td>Jatu</td>
+                            <td>45678901</td>
+                            <td>MANDIRI</td>
+                            <td>40.000</td>
+                            <td>5.000</td>
+                            <td>-</td>
+                            <td>45.000</td>
+                            <td class="status-berhasil">Berhasil</td>
+                            <td><button class="btn-lihat">Lihat</button></td>
+                        </tr>
+                        <tr>
+                            <td>Diva</td>
+                            <td>78901234</td>
+                            <td>MANDIRI</td>
+                            <td>60.000</td>
+                            <td>-</td>
+                            <td>6.000</td>
+                            <td>54.000</td>
+                            <td class="status-dibatalkan">Dibatalkan</td>
+                            <td><button class="btn-lihat">Lihat</button></td>
+                        </tr>
+                        <tr>
+                            <td>Laili</td>
+                            <td>34598761</td>
+                            <td>BNI</td>
+                            <td>75.000</td>
+                            <td>-</td>
+                            <td>7.500</td>
+                            <td>67.500</td>
+                            <td class="status-berhasil">Berhasil</td>
+                            <td><button class="btn-lihat">Lihat</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- ========= END MAIN CONTENT ========= -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function logout() {
+            if(confirm('Apakah Anda yakin ingin logout?')) {
+                alert('Logout berhasil!');
+                // Redirect atau logic logout lainnya
+            }
+        }
+    </script>
+</body>
+</html>
