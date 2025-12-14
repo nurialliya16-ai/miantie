@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembayaran Bank Transfer - Miantie.id</title>
+
+    <!-- menggunakan library populer bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <!-- desain warna, block dan gaya menyesuaikan desain figma -->
+    <link href="style.css" rel="stylesheet">
+</head>
+<body class="bg-softcream">
+    <!-- ========= START BANK TRANSFER SECTION ========= -->
+    <div id="bank-transfer-section">
+        <div class="container">
+            <!-- Title -->
+            <div class="text-center mb-5">
+                <h1 class="bank-transfer-title">Pembayaran Bank Transfer</h1>
+            </div>
+
+            <!-- Bootstrap Accordion Bank List -->
+            <div class="accordion bank-accordion" id="bankAccordion">
+                
+                <!-- BCA -->
+                <div class="accordion-item bank-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button bank-header" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBCA" aria-expanded="true" aria-controls="collapseBCA">
+                            <span class="bank-name">BCA</span>
+                        </button>
+                    </h2>
+                    <div id="collapseBCA" class="accordion-collapse collapse show" data-bs-parent="#bankAccordion">
+                        <div class="accordion-body bank-content-body">
+                            <!-- 📍 TEMPAT TEKS TATA CARA BCA - EDIT DI SINI -->
+                            <ul>
+                                <li>Buka aplikasi BCA Mobile atau myBCA dan masuk.</li>
+                                <li>Pilih menu "m-Transfer" atau "Transfer".</li>
+                                <li>Pilih "BCA Virtual Account" atau "Virtual Account BCA".</li>
+                                <li>Masukkan nomor VA yang tertera, lalu klik "OK" atau "Lanjut".</li>
+                                <li>Cek detail transaksi dan pastikan informasi sudah benar, lalu klik "Lanjut".</li>
+                                <li>Masukkan PIN BCA Anda untuk menyelesaikan transaksi.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BNI -->
+                <div class="accordion-item bank-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bank-header" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBNI" aria-expanded="false" aria-controls="collapseBNI">
+                            <span class="bank-name">BNI</span>
+                        </button>
+                    </h2>
+                    <div id="collapseBNI" class="accordion-collapse collapse" data-bs-parent="#bankAccordion">
+                        <div class="accordion-body bank-content-body">
+                            <!-- 📍 TEMPAT TEKS TATA CARA BNI - EDIT DI SINI -->
+                            <ul>
+                                <li>Buka aplikasi BNI Mobile Banking dan login.</li>
+                                <li>Pilih menu "Transfer".</li>
+                                <li>Pilih "Virtual Account Billing".</li>
+                                <li>Pilih rekening debet yang akan digunakan.</li>
+                                <li>Masukkan nomor Virtual Account dan jumlah yang akan dibayar.</li>
+                                <li>Ikuti instruksi untuk menyelesaikan transaksi.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MANDIRI -->
+                <div class="accordion-item bank-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bank-header" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMANDIRI" aria-expanded="false" aria-controls="collapseMANDIRI">
+                            <span class="bank-name">MANDIRI</span>
+                        </button>
+                    </h2>
+                    <div id="collapseMANDIRI" class="accordion-collapse collapse" data-bs-parent="#bankAccordion">
+                        <div class="accordion-body bank-content-body">
+                            <!-- 📍 TEMPAT TEKS TATA CARA MANDIRI - EDIT DI SINI -->
+                            <ul>
+                                <li>Buka aplikasi Livin' by Mandiri dan login.</li>
+                                <li>Pilih menu "Bayar".</li>
+                                <li>Pilih "Multipayment".</li>
+                                <li>Pilih penyedia jasa yang sesuai.</li>
+                                <li>Masukkan nomor Virtual Account.</li>
+                                <li>Periksa detail pembayaran dan konfirmasi transaksi.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bayar Button -->
+            <div class="text-center mt-5">
+                <button type="button" class="btn-bayar-bank">Bayar</button>
+            </div>
+        </div>
+    </div>
+    <!-- ========= END BANK TRANSFER SECTION ========= -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

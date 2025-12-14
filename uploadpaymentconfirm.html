@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Payment Confirmation - Miantie.id</title>
+
+    <!-- menggunakan library populer bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <!-- desain warna, block dan gaya menyesuaikan desain figma -->
+    <link href="style.css" rel="stylesheet">
+</head>
+<body class="bg-white">
+    <!-- ========= START UPLOAD PAYMENT SECTION ========= -->
+    <div id="upload-payment-section">
+        <div class="container">
+            <!-- Title -->
+            <div class="text-center mb-5">
+                <h1 class="upload-title">Upload Payment Confirmation</h1>
+            </div>
+
+            <!-- Upload Area -->
+            <div class="upload-container">
+                <div class="upload-box" id="uploadBox">
+                    <!-- Upload Icon -->
+                    <div class="upload-icon">
+                        <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="40" cy="40" r="30" stroke="#999" stroke-width="2" stroke-dasharray="4 4"/>
+                            <path d="M40 25V50M40 25L32 33M40 25L48 33" stroke="#999" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M25 50C25 50 25 55 40 55C55 55 55 50 55 50" stroke="#999" stroke-width="3" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    
+                    <p class="upload-text">Drag&Drop files here</p>
+                    <p class="upload-or">or</p>
+                    
+                    <label for="fileUpload" class="btn-browse">Browse Files</label>
+                    <input type="file" id="fileUpload">
+                </div>
+            </div>
+
+            <!-- Confirmation Button -->
+            <div class="text-center mt-5">
+                <button type="button" class="btn-konfirmasi" onclick="confirmUpload()">Konfirmasi</button>
+            </div>
+        </div>
+    </div>
+    <!-- ========= END UPLOAD PAYMENT SECTION ========= -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+   
+</body>
+</html>

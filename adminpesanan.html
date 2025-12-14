@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Riwayat Pesanan - Miantie.id</title>
 
     <!-- menggunakan library populer bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -11,21 +11,16 @@
     <!-- desain warna, block dan gaya menyesuaikan desain figma -->
     <link href="style.css" rel="stylesheet">
 </head>
-<body class="bg-softcream"></body>
-<body>
+<body class="bg-softcream">
     <!-- ========= START TOPBAR ========= -->
-    <!-- class p artinya padding (jarak antar ruang dengan contentnya) milik bootstrap -->
-    <!-- pt artinya padding top, pb artinya padding bottom -->
     <div id="topbar" class="bg-softcream pt-4 pb-4">
-        <!-- container adalah class bootstrap -->
         <div class="container-fluid">
-            <!-- class row untuk membuat kolom -->
             <div class="row">
                 <!-- kolom 1 -->
                 <div class="col">
                     <div id="logo" class="height-50">
                         <div class="vcenter">
-                            <img src="images/miantie-logo.png">
+                            <img src="images/miantie-logo.png" alt="Miantie Logo">
                         </div>
                     </div>
                 </div>
@@ -51,7 +46,12 @@
                 <div class="col">
                     <div id="cart" class="height-50">
                         <div class="vcenter fw-bold font-poppins">
-                          Admin &nbsp; &nbsp; &nbsp;   <img src="images/profilelogo.png">  &nbsp; &nbsp;  <a onclick="logout()" href="#">logout</a> 
+                          Admin &nbsp; &nbsp; &nbsp;   
+                          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="20" cy="20" r="18" stroke="#000" stroke-width="2"/>
+                              <circle cx="20" cy="15" r="6" fill="#000"/>
+                              <path d="M8 32c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="#000" stroke-width="2"/>
+                          </svg>
                         </div>
                     </div>
                 </div>
@@ -60,4 +60,111 @@
     </div>
     <!-- ========= END TOPBAR ========= -->
 
-   
+    <!-- ========= START MAIN CONTENT ========= -->
+    <div class="main-content">
+        <div class="container-fluid">
+            <!-- Brand Section -->
+            <div class="brand-section" style="margin-top: 50px;">
+                <img src="images/miantie-logo.png" alt="Miantie Logo" style="width: 250px; height: auto;">
+            </div>
+
+            <!-- Date Filter -->
+            <div class="date-filter">
+                <span class="date-label">Dari</span>
+                <input type="text" class="date-input" placeholder="Pilih tanggal awal" onfocus="(this.type='date')">
+                
+                <span class="date-label">Hingga</span>
+                <input type="text" class="date-input" placeholder="Pilih tanggal akhir" onfocus="(this.type='date')">
+            </div>
+
+            <!-- Orders Table -->
+            <div class="orders-table-wrapper">
+                <h2 class="orders-title">Riwayat Pesanan</h2>
+                
+                <table class="orders-table">
+                    <thead>
+                        <tr>
+                            <th>Nama</th>
+                            <th>ID</th>
+                            <th>Waktu Pemesanan</th>
+                            <th>Tanggal pengiriman</th>
+                            <th>Tanggal Pemesanan</th>
+                            <th>Waktu pengiriman</th>
+                            <th>Total</th>
+                            <th>Status</th>
+                            <th>Menu Pelanggan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Hana</td>
+                            <td>87968675</td>
+                            <td>17:00:25</td>
+                            <td>12/10/2025</td>
+                            <td>10/10/2025</td>
+                            <td>13:30:20</td>
+                            <td>45.000</td>
+                            <td class="status-berhasil">Berhasil</td>
+                            <td><button class="btn-lihat" onclick="viewOrder(1)">Lihat</button></td>
+                        </tr>
+                        <tr>
+                            <td>Aliya</td>
+                            <td>54864531</td>
+                            <td>14:33:15</td>
+                            <td>13/11/2025</td>
+                            <td>11/11/2025</td>
+                            <td>14:00:45</td>
+                            <td>35.000</td>
+                            <td class="status-dibatalkan">Dibatalkan</td>
+                            <td><button class="btn-lihat" onclick="viewOrder(2)">Lihat</button></td>
+                        </tr>
+                        <tr>
+                            <td>Jatu</td>
+                            <td>45678901</td>
+                            <td>12:20:35</td>
+                            <td>14/1/2025</td>
+                            <td>12/1/2025</td>
+                            <td>15:12:35</td>
+                            <td>45.000</td>
+                            <td class="status-berhasil">Berhasil</td>
+                            <td><button class="btn-lihat" onclick="viewOrder(3)">Lihat</button></td>
+                        </tr>
+                        <tr>
+                            <td>Diva</td>
+                            <td>78901234</td>
+                            <td>15:24:40</td>
+                            <td>10/8/2025</td>
+                            <td>8/8/2025</td>
+                            <td>16:31:54</td>
+                            <td>54.000</td>
+                            <td class="status-dibatalkan">Dibatalkan</td>
+                            <td><button class="btn-lihat" onclick="viewOrder(4)">Lihat</button></td>
+                        </tr>
+                        <tr>
+                            <td>Laili</td>
+                            <td>34598761</td>
+                            <td>16:12:22</td>
+                            <td>11/9/2025</td>
+                            <td>9/9/2025</td>
+                            <td>17:45:11</td>
+                            <td>67.500</td>
+                            <td class="status-berhasil">Berhasil</td>
+                            <td><button class="btn-lihat" onclick="viewOrder(5)">Lihat</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- ========= END MAIN CONTENT ========= -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function viewOrder(orderId) {
+            alert('Melihat detail pesanan ID: ' + orderId);
+            // Di sini bisa redirect ke halaman detail pesanan
+            // window.location.href = 'detail-pesanan.html?id=' + orderId;
+        }
+    </script>
+</body>
+</html>

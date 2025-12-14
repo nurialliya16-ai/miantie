@@ -44,11 +44,14 @@
                 </div>
 
                 <!-- kolom 3 -->
-                <div class="col">
+                 <div class="col">
                     <div id="cart" class="height-50">
                         <div class="vcenter">
-                            <img src="images/cart.png" alt="Cart">
-                            <span class="ms-3 fw-bold">Login</span>
+                            <a href="cart.html">
+                                <img src="images/cart.png"> <span id="cart-count" class="badge rounded-pill bg-danger">0</span>
+                            </a>
+                            &nbsp; &nbsp; &nbsp; 
+                            <a href="login.html" class="fw-bold text-dark text-decoration-none">login</a>
                         </div>
                     </div>
                 </div>
@@ -137,5 +140,6 @@
     <!-- ========= END LOCATION CONTENT ========= -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="totalcart.js"></script>
 </body>
 </html>
