@@ -20,14 +20,14 @@ const searchInput = document.getElementById("searchInput");
 const cartCountEl = document.getElementById("cart-count");
 
 /* ================== CART (LOCAL STORAGE) ================== */
-const CART_KEY = "miantie_cart";
+const CARTKEY = "miantie_cart";
 
 function getCart() {
-  return JSON.parse(localStorage.getItem(CART_KEY)) || [];
+  return JSON.parse(localStorage.getItem(CARTKEY)) || [];
 }
 
 function saveCart(cart) {
-  localStorage.setItem(CART_KEY, JSON.stringify(cart));
+  localStorage.setItem(CARTKEY, JSON.stringify(cart));
 }
 
 function updateCartCount() {
