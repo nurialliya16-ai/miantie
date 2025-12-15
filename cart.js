@@ -4,17 +4,17 @@
 
 const CART_KEY = "miantie_cart";
 
-// ⭐ FUNGSI 1: Ambil data cart dari localStorage
+//  FUNGSI 1: Ambil data cart dari localStorage
 function getCart() {
   return JSON.parse(localStorage.getItem(CART_KEY)) || [];
 }
 
-// ⭐ FUNGSI 2: Simpan cart ke localStorage
+//  FUNGSI 2: Simpan cart ke localStorage
 function saveCart(cart) {
   localStorage.setItem(CART_KEY, JSON.stringify(cart));
 }
 
-// ⭐ FUNGSI 3: Update badge cart (angka di icon cart)
+//  FUNGSI 3: Update badge cart (angka di icon cart)
 function updatecart() {
   const cart = getCart();
   const totalQty = cart.reduce((total, item) => total + (item.qty || 0), 0);
@@ -25,7 +25,7 @@ function updatecart() {
   }
 }
 
-// ⭐ FUNGSI 4: Tambah quantity item
+//  FUNGSI 4: Tambah quantity item
 function increaseQty(id) {
   const cart = getCart();
   const item = cart.find(i => i.id === id);
@@ -33,12 +33,12 @@ function increaseQty(id) {
   if (item) {
     item.qty += 1;
     saveCart(cart);
-    renderCartItems(); // ⭐ PENTING: Update tampilan
-    updatecart(); // ⭐ PENTING: Update badge
+    renderCartItems(); //  PENTING: Update tampilan
+    updatecart(); //  PENTING: Update badge
   }
 }
 
-// ⭐ FUNGSI 5: Kurangi quantity item
+// FUNGSI 5: Kurangi quantity item
 function decreaseQty(id) {
   let cart = getCart();
   const item = cart.find(i => i.id === id);
@@ -53,15 +53,15 @@ function decreaseQty(id) {
   }
 
   saveCart(cart);
-  renderCartItems(); // ⭐ PENTING: Update tampilan
-  updatecart(); // ⭐ PENTING: Update badge
+  renderCartItems(); // PENTING: Update tampilan
+  updatecart(); // PENTING: Update badge
 }
 
-// ⭐⭐⭐ FUNGSI UTAMA: Render cart items (YANG PALING PENTING!) ⭐⭐⭐
+//  FUNGSI UTAMA: Render cart items (YANG PALING PENTING!) 
 function renderCartItems() {
   const cartItemsContainer = document.getElementById("cart-items");
-  const cartSubtotal = document.getElementById("cart-subtotal"); // ⭐ ID untuk Subtotal
-  const cartTotal = document.getElementById("cart-total"); // ⭐ ID untuk Total
+  const cartSubtotal = document.getElementById("cart-subtotal"); // ID untuk Subtotal
+  const cartTotal = document.getElementById("cart-total"); //  ID untuk Total
   const cart = getCart();
 
   if (!cartItemsContainer) {
@@ -73,7 +73,7 @@ function renderCartItems() {
   cartItemsContainer.innerHTML = "";
   let grandTotal = 0;
 
-  // ⭐ Jika cart kosong
+  //  Jika cart kosong
   if (cart.length === 0) {
     cartItemsContainer.innerHTML = `
       <div class="text-center text-muted py-4">
@@ -85,12 +85,12 @@ function renderCartItems() {
     return;
   }
 
-  // ⭐ Loop setiap item dan render dengan struktur modal BARU
+  //  Loop setiap item dan render dengan struktur modal BARU
   cart.forEach(item => {
     const totalHarga = item.price * item.qty;
     grandTotal += totalHarga;
 
-    // ⭐ STRUKTUR HTML SESUAI DESAIN MODAL
+    //  STRUKTUR HTML SESUAI DESAIN MODAL
     cartItemsContainer.innerHTML += `
       <div class="cart-item-modal">
         <div class="item-image-modal">
@@ -110,7 +110,7 @@ function renderCartItems() {
     `;
   });
 
-  // ⭐⭐⭐ UPDATE SUBTOTAL DAN TOTAL (INI YANG PENTING!) ⭐⭐⭐
+  //  UPDATE SUBTOTAL DAN TOTAL (INI YANG PENTING!) 
   if (cartSubtotal) {
     cartSubtotal.innerText = `Rp${grandTotal.toLocaleString("id-ID")}`;
   }
@@ -118,10 +118,10 @@ function renderCartItems() {
     cartTotal.innerText = `Rp${grandTotal.toLocaleString("id-ID")}`;
   }
 
-  console.log("✅ Cart rendered! Total:", grandTotal); // Debug log
+  console.log("Cart rendered! Total:", grandTotal); // Debug log
 }
 
-// ⭐ FUNGSI 6: Process checkout (tombol Bayar)
+//  FUNGSI 6: Process checkout (tombol Bayar)
 function processCheckout() {
   const cart = getCart();
   
@@ -133,20 +133,22 @@ function processCheckout() {
   // Get form data
   const paymentMethod = document.querySelector('input[name="payment"]:checked');
   const nama = document.querySelector('.form-control-checkout[placeholder="Masukkan nama"]');
-  const alamat = document.querySelector('.form-control-checkout[placeholder="Masukkan alamat"]');
+  const alamat = document.querySelector('.form-control-checkout[placeholder="Masukkan alamat"]')
   const kodePos = document.querySelector('.form-control-checkout[placeholder="Ex. 73923"]');
   const kota = document.querySelector('.form-control-checkout[placeholder="Ex. New York"]');
   
-  // ⭐ Validation
+
+  
+  //  Validation
   if (!nama.value || !alamat.value || !kodePos.value || !kota.value) {
     alert('Mohon lengkapi semua data!');
     return;
   }
   
-  // ⭐ Calculate total
+  //  Calculate total
   const total = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
   
-  // ⭐ Prepare order data
+  // Prepare order data
   const orderData = {
     items: cart,
     total: total,
@@ -162,33 +164,43 @@ function processCheckout() {
   
   console.log('✅ Order Data:', orderData);
   
-  // ⭐ Show success message
+  //  Show success message
   alert(`Pesanan berhasil!\nTotal: Rp${total.toLocaleString("id-ID")}\nMetode: ${paymentMethod.value.toUpperCase()}`);
   
-  // ⭐ Clear cart
+  //  Clear cart
   localStorage.removeItem(CART_KEY);
   
-  // ⭐ Close modal
+  //  Close modal
   const modalElement = document.getElementById('cartpayment');
   const modal = bootstrap.Modal.getInstance(modalElement);
   if (modal) {
     modal.hide();
   }
   
-  // ⭐ Refresh cart display
+  //  Refresh cart display
   renderCartItems();
   updatecart();
+
+  // ke halaman sesuai pembayaran
+ if (paymentMethod.value === 'qris') {
+    window.location.href = 'pembayaranqris.html';
+  } else 
+  if (paymentMethod.value === 'bank') {
+    window.location.href = 'pembayaranbanktf.html';
+  }
+
 }
 
-// ⭐⭐⭐ JALANKAN SAAT HALAMAN LOAD (PENTING!) ⭐⭐⭐
+
+//  JALANKAN SAAT HALAMAN LOAD (PENTING!) 
 document.addEventListener("DOMContentLoaded", () => {
-  console.log("🚀 Cart script loaded!");
+  console.log(" Cart script loaded!");
   renderCartItems(); // Render cart pertama kali
   updatecart(); // Update badge
 });
 
 
 document.getElementById('cartpayment')?.addEventListener('shown.bs.modal', function () {
-  console.log("🛒 Modal cart dibuka!");
+  console.log(" Modal cart dibuka!");
   renderCartItems(); // Refresh cart saat modal dibuka
 });

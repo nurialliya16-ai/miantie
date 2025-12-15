@@ -2415,3 +2415,9 @@ h1.main-title {
         max-width: 350px;
     }
 }
+
+/* untuk kursor */
+.cursor-pointer{
+    cursor: pointer;
+
+}
