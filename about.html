@@ -181,10 +181,10 @@
             <div class="menu">
                 <ul>
                     <li><a href="#">Homepage</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Location</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="location.html">Location</a></li>
+                    <li><a href="https://wa.me/6285704738761">Contact Us</a></li>
                 </ul>
             </div>
             <br /><br />
@@ -198,86 +198,120 @@
         </div>
     </div>
     <!-- ========= END FOOTER ========= -->    
-          <!-- Vertically centered modal -->
-    <div class="modal fade" id="cartpayment">
-        <div class="modal-dialog modal-xl modal-dialog-centered">  
-            <div class="modal-content">
-                <div class="modal-header">
-                     <h5 class="modal-title">Modal title</h5>
-                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                   <div class="row">
-                            <!-- KIRI -->
-                        <div class="col-md-8 mb-4">
-                            <div id="cart-items">
+     
+         <!-- Vertically centered modal -->
+<div class="modal fade" id="cartpayment">
+    <div class="modal-dialog modal-xl modal-dialog-centered">  
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0">
+                <div class="row g-0">
+                    <!-- KOLOM KIRI -->
+                    <div class="col-md-6">
+                        <div class="left-cart-section-modal">
+                            <!-- Logo -->
+                            <div class="checkout-logo-modal">
+                                <img src="images/miantie-logo-2.png" alt="Miantie Logo">
                             </div>
-                            <hr>
-                            <div class="border rounded p-3">
-                                <div class="d-flex justify-content-between fw-bold fs-5">
-                                    <span>Total Bayar</span>
-                                    <span id="cart-total">Rp0</span>
+
+                            <!-- Title Keranjang -->
+                            <h2 class="cart-title-modal">Keranjang</h2>
+
+                            <!-- ⭐ UBAH 1: Cart Items - KOSONGKAN, BIAR DIISI JS -->
+                            <div class="cart-items-modal" id="cart-items">
+                                <!-- Item akan diisi otomatis oleh JavaScript dari localStorage -->
+                            </div>
+
+                            <!-- ⭐ UBAH 2: Summary - TAMBAHKAN ID -->
+                            <div class="cart-summary-modal">
+                                <div class="summary-row-modal">
+                                    <span class="summary-label-modal">Subtotal</span>
+                                    <span class="summary-value-modal" id="cart-subtotal">Rp0</span>
+                                </div>
+                                <div class="summary-row-modal">
+                                    <span class="summary-label-modal">Ongkos Kirim</span>
+                                    <span class="summary-value-modal">-</span>
+                                </div>
+                                <div class="summary-row-modal">
+                                    <span class="summary-label-modal">Discount (0%)</span>
+                                    <span class="summary-value-modal">-</span>
+                                </div>
+                                
+                                <div class="summary-row-modal total-row-modal">
+                                    <span class="summary-label-modal">Total</span>
+                                    <span class="summary-value-modal" id="cart-total">Rp0</span>
                                 </div>
                             </div>
-                            <br />
-                            <button class="btn btn-primary btn-lg w-100 mt-4">
-                                Bayar
-                            </button>
-                        </div>
-                            <!-- KANAN -->
-                        <div class="col-md-4">
-                             <div class="col-md-12 right-form-section">
-                    <h2 class="form-title mb-4">Pesanan Kamu</h2>
 
-                    <!-- Payment Method -->
-                    <div class="form-group mb-4">
-                        <label class="form-label-checkout">Payment method</label>
-                        
-                        <div class="payment-option">
-                            <input type="radio" name="payment" id="qris" value="qris" checked>
-                            <label for="qris" class="payment-label">
-                                <span>QRIS</span>
-                                <img src="images/qrismethod.jpg" alt="QRIS" class="payment-logo">
-                            </label>
-                        </div>
+                            <!-- Checkbox -->
+                            <div class="billing-checkbox-modal">
+                                <input type="checkbox" id="sameAddress" checked>
+                                <label for="sameAddress">Billing address is same as shipping</label>
+                            </div>
 
-                        <div class="payment-option">
-                            <input type="radio" name="payment" id="bank" value="bank">
-                            <label for="bank" class="payment-label">
-                                <span>Bank Transfer</span>
-                                <img src="images/bankmethod.png" alt="BNI" class="payment-logo">
-                            </label>
+                            <!-- Bayar Button -->
+                            <button class="btn-bayar-modal" onclick="processCheckout()">Bayar</button>
                         </div>
                     </div>
 
-                    <!-- Nama -->
-                    <div class="form-group mb-4">
-                        <label class="form-label-checkout">Nama</label>
-                        <input type="text" class="form-control-checkout" placeholder="Masukkan nama">
-                    </div>
+                    <!-- KOLOM KANAN -->
+                    <div class="col-md-6">
+                        <div class="right-form-section-modal">
+                            <h2 class="form-title-modal">Pesanan Kamu</h2>
 
-                    <!-- Alamat -->
-                    <div class="form-group mb-4">
-                         <label class="form-label-checkout">Alamat</label>
-                        <input type="text" class="form-control-checkout" placeholder="Masukkan alamat">
-                    </div>
+                            <!-- Payment Method -->
+                            <div class="form-group-modal">
+                                <label class="form-label-checkout">Payment method</label>
+                                
+                                <div class="payment-option">
+                                    <input type="radio" name="payment" id="qris" value="qris" checked>
+                                    <label for="qris" class="payment-label">
+                                        <span>QRIS</span>
+                                        <img src="images/qrismethod.jpg" alt="QRIS" class="payment-logo">
+                                    </label>
+                                </div>
 
-                    <!-- Kode Pos & Kota -->
-                    <div class="row">
-                        <div class="col-md-6 mb-4">
-                            <label class="form-label-checkout">Kode Pos</label>
-                            <input type="text" class="form-control-checkout" placeholder="Ex. 73923">
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <label class="form-label-checkout">Kota</label>
-                            <input type="text" class="form-control-checkout" placeholder="Ex. New York">
-                            
+                                <div class="payment-option">
+                                    <input type="radio" name="payment" id="bank" value="bank">
+                                    <label for="bank" class="payment-label">
+                                        <span>Bank Transfer</span>
+                                        <img src="images/bankmethod.png" alt="BNI" class="payment-logo">
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Nama -->
+                            <div class="form-group-modal">
+                                <label class="form-label-checkout">Nama</label>
+                                <input type="text" class="form-control-checkout" placeholder="Masukkan nama" required>
+                            </div>
+
+                            <!-- Alamat -->
+                            <div class="form-group-modal">
+                                <label class="form-label-checkout">Alamat</label>
+                                <input type="text" class="form-control-checkout" placeholder="Masukkan alamat" required>
+                            </div>
+
+                            <!-- Kode Pos & Kota -->
+                            <div class="row g-3">
+                                <div class="col-6">
+                                    <label class="form-label-checkout">Kode Pos</label>
+                                    <input type="text" class="form-control-checkout" placeholder="Ex. 73923" required>
+                                </div>
+                                <div class="col-6">
+                                    <label class="form-label-checkout">Kota</label>
+                                    <input type="text" class="form-control-checkout" placeholder="Ex. New York" required>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-             </div>
-         </div>
+            </div>
+        </div>
     </div>
+</div>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     <script src="cart.js"></script>

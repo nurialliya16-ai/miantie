@@ -1306,365 +1306,6 @@ h1.main-title {
     }
 }
 
-/* ========= CHECKOUT PAGE STYLES ========= */
-
-.bg-white {
-    background-color: #ffffff;
-}
-
-#checkout-section {
-    min-height: 100vh;
-    padding: 0;
-}
-
-/* Kolom Kiri - Cart Section */
-.left-cart-section {
-    background-color: #F5F5F5;
-    padding: 60px 50px;
-    min-height: 100vh;
-}
-
-/* Kolom Kanan - Form Section */
-.right-form-section {
-    background-color: #FFFFFF;
-    padding: 60px 50px;
-    min-height: 100vh;
-}
-
-/* Logo */
-.checkout-logo img {
-    width: 150px;
-    height: auto;
-}
-
-/* Cart Title */
-.cart-title {
-    font-size: 32px;
-    font-weight: 700;
-    color: #000;
-    font-family: 'Poppins', sans-serif;
-    margin-bottom: 30px;
-}
-
-/* Cart Items */
-.cart-items {
-    margin-bottom: 40px;
-}
-
-.cart-item {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 20px 0;
-    border-bottom: 1px solid #ddd;
-}
-
-.item-image {
-    width: 80px;
-    height: 80px;
-    border-radius: 10px;
-    overflow: hidden;
-    flex-shrink: 0;
-}
-
-.item-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.item-details {
-    flex-grow: 1;
-}
-
-.item-name {
-    font-size: 18px;
-    font-weight: 600;
-    color: #000;
-    margin-bottom: 5px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.item-variant {
-    font-size: 14px;
-    color: #666;
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-}
-
-.item-price {
-    font-size: 18px;
-    font-weight: 600;
-    color: #000;
-    margin-right: 20px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.item-quantity {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.qty-btn {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    border: none;
-    background-color: #C0C0C0;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.qty-btn:hover {
-    background-color: #A0A0A0;
-}
-
-.item-quantity input {
-    width: 50px;
-    text-align: center;
-    border: none;
-    background-color: transparent;
-    font-size: 16px;
-    font-weight: 600;
-    font-family: 'Poppins', sans-serif;
-}
-
-/* Cart Summary */
-.cart-summary {
-    background-color: #fff;
-    padding: 25px;
-    border-radius: 10px;
-    margin-bottom: 30px;
-}
-
-.summary-row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.summary-label {
-    font-size: 16px;
-    color: #666;
-}
-
-.summary-value {
-    font-size: 16px;
-    color: #000;
-    font-weight: 500;
-}
-
-.total-row {
-    margin-top: 20px;
-}
-
-.total-row .summary-label,
-.total-row .summary-value {
-    font-size: 20px;
-    font-weight: 700;
-    color: #000;
-}
-
-.cart-summary hr {
-    border: none;
-    border-top: 1px solid #ddd;
-    margin: 20px 0;
-}
-
-/* Billing Checkbox */
-.billing-checkbox {
-    margin-bottom: 30px;
-}
-
-.billing-checkbox input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    accent-color: #5B7FFF;
-    cursor: pointer;
-}
-
-.billing-checkbox label {
-    font-size: 16px;
-    color: #000;
-    font-family: 'Poppins', sans-serif;
-    cursor: pointer;
-}
-
-/* Button Bayar Checkout */
-.btn-bayar-checkout {
-    width: 100%;
-    padding: 15px 20px;
-    background-color: #5B7FFF;
-    border: none;
-    border-radius: 10px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    color: #fff;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.btn-bayar-checkout:hover {
-    background-color: #4A6EDD;
-}
-
-/* Form Title */
-.form-title {
-    font-size: 32px;
-    font-weight: 700;
-    color: #000;
-    font-family: 'Poppins', sans-serif;
-    margin-bottom: 30px;
-}
-
-/* Form Group */
-.form-group {
-    margin-bottom: 25px;
-}
-
-.form-label-checkout {
-    display: block;
-    font-size: 16px;
-    font-weight: 600;
-    color: #000;
-    margin-bottom: 10px;
-    font-family: 'Poppins', sans-serif;
-}
-
-/* Payment Options */
-.payment-option {
-    border: 2px solid #E0E0E0;
-    border-radius: 10px;
-    padding: 15px 20px;
-    margin-bottom: 15px;
-    cursor: pointer;
-    transition: border-color 0.3s;
-}
-
-.payment-option:hover {
-    border-color: #5B7FFF;
-}
-
-.payment-option input[type="radio"] {
-    margin-right: 15px;
-    width: 20px;
-    height: 20px;
-    accent-color: #5B7FFF;
-    cursor: pointer;
-}
-
-.payment-label {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    cursor: pointer;
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    color: #000;
-}
-
-.payment-logo {
-    height: 30px;
-    width: auto;
-    object-fit: contain;
-}
-
-/* Form Control */
-.form-control-checkout {
-    width: 100%;
-    padding: 12px 20px;
-    border: 2px solid #E0E0E0;
-    border-radius: 10px;
-    font-size: 16px;
-    color: #000;
-    font-family: 'Poppins', sans-serif;
-    outline: none;
-    transition: border-color 0.3s;
-}
-
-.form-control-checkout:focus {
-    border-color: #5B7FFF;
-}
-
-.form-control-checkout::placeholder {
-    color: #999;
-}
-
-/* Responsive Design */
-@media (max-width: 992px) {
-    .left-cart-section,
-    .right-form-section {
-        padding: 40px 30px;
-    }
-    
-    .cart-title,
-    .form-title {
-        font-size: 28px;
-    }
-}
-
-@media (max-width: 768px) {
-    .left-cart-section,
-    .right-form-section {
-        padding: 30px 20px;
-        min-height: auto;
-    }
-    
-    .cart-item {
-        flex-wrap: wrap;
-        gap: 15px;
-    }
-    
-    .item-image {
-        width: 60px;
-        height: 60px;
-    }
-    
-    .item-details {
-        flex-basis: 100%;
-    }
-    
-    .item-price,
-    .item-quantity {
-        margin-right: 0;
-    }
-    
-    .cart-title,
-    .form-title {
-        font-size: 24px;
-    }
-}
-
-@media (max-width: 576px) {
-    .checkout-logo img {
-        width: 120px;
-    }
-    
-    .cart-title,
-    .form-title {
-        font-size: 22px;
-    }
-    
-    .item-name {
-        font-size: 16px;
-    }
-    
-    .item-variant {
-        font-size: 13px;
-    }
-    
-    .cart-summary {
-        padding: 20px;
-    }
-}
 
 /* ========= UPLOAD PAYMENT CONFIRM PAGE STYLES ========= */
 
@@ -2299,5 +1940,478 @@ h1.main-title {
     .orders-table td {
         font-size: 12px;
         padding: 10px 6px;
+    }
+}
+
+/* ========= MODAL CART - FIXED VERSION ========= */
+
+/* Modal Settings */
+#cartpayment .modal-dialog {
+    max-width: 1200px;
+}
+
+#cartpayment .modal-content {
+    border-radius: 0;
+    border: none;
+}
+
+#cartpayment .modal-body {
+    padding: 0 !important;
+}
+
+#cartpayment .modal-header {
+    padding: 15px 20px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    border: none;
+    background: transparent;
+}
+
+#cartpayment .modal-body .row {
+    margin: 0 !important;
+}
+
+/* ========= KOLOM KIRI ========= */
+.left-cart-section-modal {
+    background-color: #F5F5F5;
+    padding: 50px 40px;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Logo */
+.checkout-logo-modal {
+    margin-bottom: 30px;
+}
+
+.checkout-logo-modal img {
+    width: 120px;
+    height: auto;
+}
+
+/* Title Keranjang */
+.cart-title-modal {
+    font-size: 32px;
+    font-weight: 700;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 35px;
+}
+
+/* Cart Items Container */
+.cart-items-modal {
+    margin-bottom: 40px;
+}
+
+/* Single Item */
+.cart-item-modal {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item-modal:first-child {
+    padding-top: 0;
+}
+
+.cart-item-modal:last-child {
+    border-bottom: none;
+}
+
+/* Image Bulat */
+.item-image-modal {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.item-image-modal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Product Info */
+.item-details-modal {
+    flex-grow: 1;
+}
+
+.item-name-modal {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.item-variant-modal {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Price */
+.item-price-modal {
+    font-size: 18px;
+    font-weight: 700;
+    color: #000;
+    margin-right: 30px;
+    font-family: 'Poppins', sans-serif;
+    min-width: 100px;
+    text-align: right;
+}
+
+/* Quantity */
+.item-quantity-modal {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.qty-btn-modal {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: none;
+    background-color: #C8C8C8;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qty-btn-modal:hover {
+    background-color: #A8A8A8;
+}
+
+.item-quantity-modal input {
+    width: 50px;
+    text-align: center;
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Summary */
+.cart-summary-modal {
+    padding: 0;
+    margin: 30px 0;
+}
+
+.summary-row-modal {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.summary-label-modal {
+    font-size: 16px;
+    color: #666;
+}
+
+.summary-value-modal {
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+}
+
+.total-row-modal {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px solid #ddd;
+}
+
+.total-row-modal .summary-label-modal,
+.total-row-modal .summary-value-modal {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+}
+
+/* Checkbox */
+.billing-checkbox-modal {
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+}
+
+.billing-checkbox-modal input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 12px;
+    accent-color: #5B7FFF;
+    cursor: pointer;
+}
+
+.billing-checkbox-modal label {
+    font-size: 15px;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    margin: 0;
+}
+
+/* Button Bayar */
+.btn-bayar-modal {
+    width: 100%;
+    padding: 16px 20px;
+    background-color: #6B8AFF;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: auto;
+}
+
+.btn-bayar-modal:hover {
+    background-color: #5B7AEE;
+    transform: translateY(-2px);
+}
+
+/* ========= KOLOM KANAN ========= */
+.right-form-section-modal {
+    background-color: #FFFFFF;
+    padding: 50px 40px;
+    min-height: 600px;
+}
+
+/* Title */
+.form-title-modal {
+    font-size: 32px;
+    font-weight: 700;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 35px;
+}
+
+/* Form Group */
+.form-group-modal {
+    margin-bottom: 25px;
+}
+
+/* Label */
+.form-label-checkout {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 12px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Payment Option */
+.payment-option {
+    border: 2px solid #E5E5E5;
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.payment-option:hover {
+    border-color: #6B8AFF;
+}
+
+.payment-option:has(input:checked) {
+    border-color: #6B8AFF;
+    background-color: #F8F9FF;
+}
+
+.payment-option input[type="radio"] {
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+    accent-color: #6B8AFF;
+    cursor: pointer;
+}
+
+.payment-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    margin: 0;
+}
+
+.payment-logo {
+    height: 35px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Input Field */
+.form-control-checkout {
+    width: 100%;
+    padding: 14px 18px;
+    border: 2px solid #E5E5E5;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-control-checkout:focus {
+    border-color: #6B8AFF;
+}
+
+.form-control-checkout::placeholder {
+    color: #999;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #cartpayment .modal-body .row {
+        flex-direction: column;
+    }
+    
+    .left-cart-section-modal,
+    .right-form-section-modal {
+        padding: 30px 25px;
+        min-height: auto;
+    }
+    
+    .cart-title-modal,
+    .form-title-modal {
+        font-size: 26px;
+    }
+    
+    .checkout-logo-modal img {
+        width: 100px;
+    }
+
+    .item-image-modal {
+        width: 60px;
+        height: 60px;
+    }
+
+    .item-price-modal {
+        font-size: 16px;
+        min-width: 80px;
+    }
+}
+
+/* ========= MAIN CONTENT - HOME PAGE ADMIN ========= */
+.main-content {
+    min-height: calc(100vh - 100px);
+    display: flex;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.left-section {
+    padding-right: 60px;
+    padding-left: 80px;
+    padding-top: 50px;
+}
+
+.brand-section {
+    margin-bottom: 60px;
+    margin-left: 50px;
+}
+
+.brand-section img {
+    max-width: 280px;
+    height: auto;
+}
+
+.menu-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 360px;
+}
+
+.menu-btn {
+    background-color: white;
+    border: none;
+    padding: 25px 40px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #2C1810;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+}
+
+.menu-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    background-color: #f8f8f8;
+    color: #2C1810;
+}
+
+.right-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.illustration-img {
+    max-width: 100%;
+    height: auto;
+    width: 500px;
+}
+
+/* Responsive untuk Home Admin */
+@media (max-width: 992px) {
+    .left-section {
+        padding-right: 0;
+        padding-left: 20px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .brand-section {
+        margin-left: 0;
+    }
+
+    .menu-buttons {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .illustration-img {
+        width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .illustration-img {
+        width: 100%;
+        max-width: 350px;
     }
 }
