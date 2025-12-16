@@ -4,7 +4,7 @@ const products = [
   { id: 2, name: "Bingka Chocochip", image: "./images/Bingka-Chocochip.png", price: 6000, unit: "PCS" },
   { id: 3, name: "Bingka Keju", image: "./images/bingka-keju.png", price: 6000, unit: "PCS" },
   { id: 4, name: "Bingka Coklat", image: "./images/bingkacoklat.png", price: 6000, unit: "PCS" },
-  { id: 5, name: "Bingka Kismis", image: "./images/Bingka-Kismis.png", price: 6000, unit: "SACKS" },
+  { id: 5, name: "Bingka Kismis", image: "./images/bingkakismis.png", price: 6000, unit: "SACKS" },
   { id: 6, name: "Es Mambo Coklat", image: "./images/mambo-coklat.png", price: 1000, unit: "PCS" },
   { id: 7, name: "Es Mambo Taro", image: "./images/mambo-taro.png", price: 1000, unit: "PCS" },
   { id: 8, name: "Es Mambo Strawberry", image: "./images/mambo-strawberry.png", price: 1000, unit: "PCS" },
