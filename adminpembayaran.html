@@ -5,22 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Miantie.id - Riwayat Pembayaran</title>
     
-    <!-- menggunakan library populer bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     
-    <!-- desain warna, block dan gaya menyesuaikan desain figma -->
     <link href="style.css" rel="stylesheet">
 </head>
 <body class="bg-softcream">
     <!-- ========= START TOPBAR ========= -->
-    <!-- class p artinya padding (jarak antar ruang dengan contentnya) milik bootstrap -->
-    <!-- pt artinya padding top, pb artinya padding bottom -->
     <div id="topbar" class="bg-softcream pt-4 pb-4">
-        <!-- container adalah class bootstrap -->
         <div class="container-fluid">
-            <!-- class row untuk membuat kolom -->
             <div class="row">
-                <!-- kolom 1 -->
                 <div class="col">
                     <div id="logo" class="height-50">
                         <div class="vcenter">
@@ -29,7 +22,6 @@
                     </div>
                 </div>
 
-                <!-- kolom 2 -->
                 <div class="col">
                     <div class="height-50">
                         <div class="vcenter">
@@ -46,7 +38,6 @@
                     </div>
                 </div>
 
-                <!-- kolom 3 -->
                 <div class="col">
                     <div id="cart" class="height-50">
                         <div class="vcenter fw-bold font-poppins">
@@ -60,15 +51,15 @@
     <!-- ========= END TOPBAR ========= -->
 
     <!-- ========= START MAIN CONTENT ========= -->
-    <div class="main-content">
+    <div class="main-content-payment">
         <div class="container-fluid">
-            <!-- Brand Section -->
-            <div class="brand-section" style="margin-top: 15px;">
+            <!-- Brand Section - HAPUS INLINE STYLE -->
+            <div class="brand-section-payment">
                 <img src="images/miantie-logo-2.png" alt="Miantie Logo" style="width: 200px; height: auto;">
             </div>
 
             <!-- Date Filter -->
-            <div class="date-filter">
+            <div class="date-filter-payment">
                 <span class="date-label">Dari</span>
                 <input type="text" class="date-input" placeholder="Pilih tanggal awal" onfocus="(this.type='date')">
                 
@@ -78,7 +69,7 @@
 
             <!-- Payment Table -->
             <div class="payment-table-wrapper">
-                <h2 class="section-title">Riwayat Pembayaran</h2>
+                <h2 class="section-title-payment">Riwayat Pembayaran</h2>
                 
                 <table class="payment-table">
                     <thead>
@@ -159,7 +150,5 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="admin.js"></script>
-      
-    
 </body>
 </html>

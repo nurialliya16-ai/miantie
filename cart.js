@@ -164,9 +164,6 @@ function processCheckout() {
   
   console.log('✅ Order Data:', orderData);
   
-  //  Show success message
-  alert(`Pesanan berhasil!\nTotal: Rp${total.toLocaleString("id-ID")}\nMetode: ${paymentMethod.value.toUpperCase()}`);
-  
   //  Clear cart
   localStorage.removeItem(CART_KEY);
   

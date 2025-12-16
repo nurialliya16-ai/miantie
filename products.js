@@ -1,17 +1,17 @@
 /* ================== DATA PRODUK ================== */
 const products = [
   { id: 1, name: "Bingka Original", image: "./images/bingkaoriginal.png", price: 5000, unit: "PCS" },
-  { id: 2, name: "Bingka Chocochip", image: "./images/bingkachocochips.png", price: 6000, unit: "PCS" },
-  { id: 3, name: "Bingka Keju", image: "./images/bingkakeju.png", price: 6000, unit: "PCS" },
+  { id: 2, name: "Bingka Chocochip", image: "./images/bingka-chocochip.png", price: 6000, unit: "PCS" },
+  { id: 3, name: "Bingka Keju", image: "./images/bingka-keju.png", price: 6000, unit: "PCS" },
   { id: 4, name: "Bingka Coklat", image: "./images/bingkacoklat.png", price: 6000, unit: "PCS" },
-  { id: 5, name: "Bingka Kismis", image: "./images/bingkakismis.png", price: 6000, unit: "SACKS" },
-  { id: 6, name: "Es Mambo Coklat", image: "./images/esmambocoklat.png", price: 1000, unit: "PCS" },
-  { id: 7, name: "Es Mambo Taro", image: "./images/esmambotaro.png", price: 1000, unit: "PCS" },
-  { id: 8, name: "Es Mambo Strawberry", image: "./images/esmambostrawberry.png", price: 1000, unit: "PCS" },
-  { id: 9, name: "Es Mambo Matcha", image: "./images/esmambomatcha.png", price: 1000, unit: "PCS" },
-  { id: 10, name: "Es Mambo Blueberry", image: "./images/esmamboblueberry.png", price: 1000, unit: "PCS" },
-  { id: 11, name: "Bolu Ketan Original", image: "./images/boluketanhitam.png", price: 15000, unit: "3 PCS" },
-  { id: 12, name: "Bolu Ketan Lumer", image: "./images/boluketanlumer.png", price: 20000, unit: "3 PCS" }
+  { id: 5, name: "Bingka Kismis", image: "./images/bingka-Kismis.png", price: 6000, unit: "SACKS" },
+  { id: 6, name: "Es Mambo Coklat", image: "./images/mambo-coklat.png", price: 1000, unit: "PCS" },
+  { id: 7, name: "Es Mambo Taro", image: "./images/mambo-taro.png", price: 1000, unit: "PCS" },
+  { id: 8, name: "Es Mambo Strawberry", image: "./images/mambo-strawberry.png", price: 1000, unit: "PCS" },
+  { id: 9, name: "Es Mambo Matcha", image: "./images/mambo-matcha.png", price: 1000, unit: "PCS" },
+  { id: 10, name: "Es Mambo Blueberry", image: "./images/mambo-blueberry.png", price: 1000, unit: "PCS" },
+  { id: 11, name: "Bolu Ketan Original", image: "./images/boluketan-ori.png", price: 15000, unit: "3 PCS" },
+  { id: 12, name: "Bolu Ketan Lumer", image: "./images/boluketan-lumer.png", price: 20000, unit: "3 PCS" }
 ];
 
 /* ================== ELEMENT ================== */

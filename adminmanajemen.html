@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Manajemen Produk - Miantie.id</title>
 
     <!-- menggunakan library populer bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
@@ -11,21 +11,16 @@
     <!-- desain warna, block dan gaya menyesuaikan desain figma -->
     <link href="style.css" rel="stylesheet">
 </head>
-<body class="bg-softcream"></body>
-<body>
+<body class="bg-softcream">
     <!-- ========= START TOPBAR ========= -->
-    <!-- class p artinya padding (jarak antar ruang dengan contentnya) milik bootstrap -->
-    <!-- pt artinya padding top, pb artinya padding bottom -->
     <div id="topbar" class="bg-softcream pt-4 pb-4">
-        <!-- container adalah class bootstrap -->
         <div class="container-fluid">
-            <!-- class row untuk membuat kolom -->
             <div class="row">
                 <!-- kolom 1 -->
                 <div class="col">
                     <div id="logo" class="height-50">
                         <div class="vcenter">
-                            <img src="images/miantie-logo.png">
+                            <img src="images/miantie-logo.png" alt="Miantie Logo">
                         </div>
                     </div>
                 </div>
@@ -51,7 +46,7 @@
                 <div class="col">
                     <div id="cart" class="height-50">
                         <div class="vcenter fw-bold font-poppins">
-                          Admin &nbsp; &nbsp; &nbsp;   <img src="images/profilelogo.png">  &nbsp; &nbsp;  <a onclick="logout()" href="#">logout</a> 
+                          Admin &nbsp; &nbsp; &nbsp; <img src="images/profilelogo.png" alt="Profile"> &nbsp; &nbsp; <a onclick="logout()" href="#">logout</a> 
                         </div>
                     </div>
                 </div>
@@ -60,4 +55,205 @@
     </div>
     <!-- ========= END TOPBAR ========= -->
 
-   
+    <!-- ========= START CONTENT ========= -->
+    <div class="manajemen-section">
+        <div class="container">
+            <!-- Title -->
+            <h1 class="manajemen-title">Manajemen Produk</h1>
+
+            <!-- Product Table Card -->
+            <div class="product-table-card">
+                <h2 class="table-title">Daftar Produk</h2>
+
+                <!-- Table -->
+                <div class="table-responsive">
+                    <table class="product-table">
+                        <thead>
+                            <tr>
+                                <th>Tanggal pengiriman</th>
+                                <th>Nama Produk</th>
+                                <th>Jumlah</th>
+                                <th>Harga</th>
+                                <th>Pengaturan</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Row 1 -->
+                            <tr>
+                                <td>
+                                    <img src="images/bingka-keju.png" alt="Bingka Keju" class="product-img">
+                                </td>
+                                <td>Bingka Keju</td>
+                                <td>1</td>
+                                <td>6.000</td>
+                                <td>
+                                    <button class="btn-ubah">Ubah</button>
+                                    <button class="btn-hapus">Hapus</button>
+                                </td>
+                            </tr>
+
+                            <!-- Row 2 -->
+                            <tr>
+                                <td>
+                                    <img src="images/bingkacoklat.png" alt="Bingka coklat" class="product-img">
+                                </td>
+                                <td>Bingka coklat</td>
+                                <td>1</td>
+                                <td>6.000</td>
+                                <td>
+                                    <button class="btn-ubah">Ubah</button>
+                                    <button class="btn-hapus">Hapus</button>
+                                </td>
+                            </tr>
+
+                            <!-- Row 3 -->
+                            <tr>
+                                <td>
+                                    <img src="images/Bingka-Chocochip.png" alt="Bingka Chocochip" class="product-img">
+                                </td>
+                                <td>Bingka Chocochip</td>
+                                <td>1</td>
+                                <td>6.000</td>
+                                <td>
+                                    <button class="btn-ubah">Ubah</button>
+                                    <button class="btn-hapus">Hapus</button>
+                                </td>
+                            </tr>
+
+                            <!-- Row 4 -->
+                            <tr>
+                                <td>
+                                    <img src="images/Bingka-Kismis.png" alt="Bingka kismis" class="product-img">
+                                </td>
+                                <td>Bingka kismis</td>
+                                <td>1</td>
+                                <td>6.000</td>
+                                <td>
+                                    <button class="btn-ubah">Ubah</button>
+                                    <button class="btn-hapus">Hapus</button>
+                                </td>
+                            </tr>
+
+                            <!-- Row 5 -->
+                            <tr>
+                                <td>
+                                    <img src="images/bingkaoriginal.png" alt="Bingka Original" class="product-img">
+                                </td>
+                                <td>Bingka Original</td>
+                                <td>1</td>
+                                <td>6.000</td>
+                                <td>
+                                    <button class="btn-ubah">Ubah</button>
+                                    <button class="btn-hapus">Hapus</button>
+                                </td>
+                            </tr>
+
+                            <!-- Row 6 -->
+                            <tr>
+                                <td>
+                                    <img src="images/mambo-taro.png" alt="Es Mambo Taro" class="product-img">
+                                </td>
+                                <td>Es Mambo Taro</td>
+                                <td>1</td>
+                                <td>1.000</td>
+                                <td>
+                                    <button class="btn-ubah">Ubah</button>
+                                    <button class="btn-hapus">Hapus</button>
+                                </td>
+                            </tr>
+
+                            <!-- Row 7 -->
+                            <tr>
+                                <td>
+                                    <img src="images/mambo-matcha.png" alt="Es Mambo Matcha" class="product-img">
+                                </td>
+                                <td>Es Mambo Matcha</td>
+                                <td>1</td>
+                                <td>1.000</td>
+                                <td>
+                                    <button class="btn-ubah">Ubah</button>
+                                    <button class="btn-hapus">Hapus</button>
+                                </td>
+                            </tr>
+
+                            <!-- Row 8 -->
+                            <tr>
+                                <td>
+                                    <img src="images/mambo-strawberry.png" alt="Es Mambo Strawberry" class="product-img">
+                                </td>
+                                <td>Es Mambo Strawberry</td>
+                                <td>1</td>
+                                <td>1.000</td>
+                                <td>
+                                    <button class="btn-ubah">Ubah</button>
+                                    <button class="btn-hapus">Hapus</button>
+                                </td>
+                            </tr>
+
+                            <!-- Row 9 -->
+                            <tr>
+                                <td>
+                                    <img src="images/mambo-coklat.png" alt="Es Mambo Coklat" class="product-img">
+                                </td>
+                                <td>Es Mambo Coklat</td>
+                                <td>1</td>
+                                <td>1.000</td>
+                                <td>
+                                    <button class="btn-ubah">Ubah</button>
+                                    <button class="btn-hapus">Hapus</button>
+                                </td>
+                            </tr>
+
+                            <!-- Row 10 -->
+                            <tr>
+                                <td>
+                                    <img src="images/mambo-blueberry.png" alt="es mambo Blueberry" class="product-img">
+                                </td>
+                                <td>Es mambo Blueberry</td>
+                                <td>1</td>
+                                <td>1.000</td>
+                                <td>
+                                    <button class="btn-ubah">Ubah</button>
+                                    <button class="btn-hapus">Hapus</button>
+                                </td>
+                            </tr>
+
+                            <!-- Row 11 -->
+                            <tr>
+                                <td>
+                                    <img src="images/boluketan-ori.png" alt="Bolu ketan Original" class="product-img">
+                                </td>
+                                <td>Bolu ketan Original</td>
+                                <td>3</td>
+                                <td>15.000</td>
+                                <td>
+                                    <button class="btn-ubah">Ubah</button>
+                                    <button class="btn-hapus">Hapus</button>
+                                </td>
+                            </tr>
+
+                            <!-- Row 12 -->
+                            <tr>
+                                <td>
+                                    <img src="images/boluketan-lumer.png" alt="Bolu Ketan Lumer" class="product-img">
+                                </td>
+                                <td>Bolu Ketan Lumer</td>
+                                <td>1</td>
+                                <td>20.000</td>
+                                <td>
+                                    <button class="btn-ubah">Ubah</button>
+                                    <button class="btn-hapus">Hapus</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ========= END CONTENT ========= -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>

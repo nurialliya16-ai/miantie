@@ -68,21 +68,48 @@
                 <p class="products-subtitle">Setiap gigitan kue Bingka kami membawa pulang kenangan masa kecil — freshly baked setiap hari untuk kamu.</p>
             </div>
 
-            <!-- Search Bar -->
-            <!-- Search Bar -->
-<<!-- Search Bar -->
-<div class="row justify-content-center mb-5">
-    <div class="col-md-20">  <!-- Ubah jadi col-md-10 untuk lebih panjang -->
-        <div class="search-box">
-            <img src="images/search.png" alt="Search" class="search-icon">
-            <input id="searchInput" type="text" class="search-input" placeholder="Cari produk...">
-        </div>
-    </div>
-</div>
-
+            
+                        <<!-- Search Bar -->
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-20">  <!-- Ubah jadi col-md-10 untuk lebih panjang -->
+                    <div class="search-box">
+                        <img src="images/search.png" alt="Search" class="search-icon">
+                        <input id="searchInput" type="text" class="search-input" placeholder="Cari produk...">
+                    </div>
+                </div>
+            </div>
             <div class="row g-4" id="product-list">
                 <!-- Produk akan dirender oleh JavaScript -->
             </div>
+        </div>
+    </div>
+    
+    <!-- ========= START FOOTER ========= -->
+    <div id="footer" class="text-center">
+        <div class="container">
+            <img src="images/miantie-logo-2.png" class="img-fluid">
+            <br /><br />
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Homepage</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="location.html">Location</a></li>
+                    <li><a href="https://wa.me/6285704738761">Contact Us</a></li>
+                </ul>
+            </div>
+            <br /><br />
+            <div class="menu">
+                <ul>
+                    <li><a href="https://www.tiktok.com/@miantie.id?_t=ZS-8xYck0Wxauv&_r=1"><img src="images/tiktok.png"></a></li>
+                    <li><a href="https://wa.me/6285704738761"><img src="images/call.png"></a></li>
+                    <li><a href="https://www.instagram.com/miantie.id/profilecard/?igsh=eXM5YjA3dWJieHV5"><img src="images/instagram.png"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- ========= END FOOTER ========= -->
+    
     <div 
         id="cart-alert"
         class="alert alert-success position-fixed top-0 start-50 translate-middle-x mt-4 shadow"
@@ -111,12 +138,12 @@
                             <!-- Title Keranjang -->
                             <h2 class="cart-title-modal">Keranjang</h2>
 
-                            <!-- ⭐ UBAH 1: Cart Items - KOSONGKAN, BIAR DIISI JS -->
+                            <!-- UBAH 1: Cart Items - KOSONGKAN, BIAR DIISI JS -->
                             <div class="cart-items-modal" id="cart-items">
                                 <!-- Item akan diisi otomatis oleh JavaScript dari localStorage -->
                             </div>
 
-                            <!-- ⭐ UBAH 2: Summary - TAMBAHKAN ID -->
+                            <!-- UBAH 2: Summary - TAMBAHKAN ID -->
                             <div class="cart-summary-modal">
                                 <div class="summary-row-modal">
                                     <span class="summary-label-modal">Subtotal</span>
