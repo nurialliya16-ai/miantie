@@ -1,9 +1,0 @@
-[33m18b4cbc[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m menambahkan fitur fitur yg kurang seperti footer dan merapihkan gambar-gambar product
-[33m4d0e3c7[m menyesuaikan alamat link buttonnya masing-masing
-[33m245ea45[m perbaikan cart dan stylenya
-[33ma1b9fca[m melengkapi fitur keranjang agar bisa di interaksi
-[33m3319d42[m menambahkan fitur pencarian dan add to cart
-[33mc267afb[m menambahkan page halaman admin, membuat fitu loc menggunakan gmaps, update halaman pembayaran
-[33maf58228[m menambahkan logika login dan llogout, profile logo
-[33m0636805[m penambahan file login, file register dan 2 font
-[33m1145a66[m first init

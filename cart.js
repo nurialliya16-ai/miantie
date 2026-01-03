@@ -162,7 +162,7 @@ function processCheckout() {
     tanggal: new Date().toISOString()
   };
   
-  console.log('✅ Order Data:', orderData);
+  console.log('Order Data:', orderData);
   
   //  Clear cart
   localStorage.removeItem(CART_KEY);

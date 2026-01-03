@@ -114,7 +114,7 @@ function selectProduct(id) {
 function showAddToCartAlert(productName) {
   const alertBox = document.getElementById("cart-alert");
 
-  alertBox.innerText = `✅ ${productName} ditambahkan ke keranjang`;
+  alertBox.innerText = ` ${productName} ditambahkan ke keranjang`;
   alertBox.style.display = "block";
 
   setTimeout(() => {

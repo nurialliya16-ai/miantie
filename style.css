@@ -25,6 +25,7 @@
     background-color: green;
 }
 
+/*HOMEPAGE*/
 #topbar {
     border-bottom: 2px solid #b79d84;
 }
@@ -118,18 +119,18 @@ input.general-input {
     padding: 10px;
     border: 2px solid #6b492d;
     border-radius: 5px;   /* harus pakai px */
-    outline: none;        /* opsional: hilangkan garis biru default */
+    outline: none;        
 }
 
 input.general-input:focus {
-    border-color: #6b492d; /* cukup ubah yang perlu */
+    border-color: #6b492d; 
 }
 #customer-says {
     padding-top: 70px;
     padding-bottom: 70px;
     background-color: #ffffff;
 }
-/* ========= FOOTER FIX - TAMBAHKAN KE style.css ========= */
+/* ========= FOOTER FIX ========= */
 
 /* Footer Styles */
 #footer {
@@ -252,7 +253,7 @@ input.general-input:focus {
 
 #feel-authentic h2 {
     font-size: 50px;
-    font-family: 'MochiyPop', sans-serif; /*TAMBAH: MochiyPop */
+    font-family: 'MochiyPop', sans-serif; 
 }
 
 #brand-info {
@@ -295,13 +296,13 @@ input.general-input:focus {
 
 .white-box h3 {
     font-size: 40px;
-    font-family: 'Poppins', sans-serif; /*TAMBAH: Angka pakai Poppins */
+    font-family: 'Poppins', sans-serif; 
     font-weight: 700;
 }
 
 .white-box p,
 .white-box .lead {
-    font-family: 'Poppins', sans-serif; /*TAMBAH: Teks pakai Poppins */
+    font-family: 'Poppins', sans-serif; 
 }
 
 #registration {
@@ -833,7 +834,7 @@ h1.main-title {
     background-color: #689f38;
 }
 
-/* ========= PAYMENT ADMIN PAGE STYLES ========= */
+/* ========= PAYMENT ADMIN PAGE ========= */
 
 /* Main Content Payment */
 .main-content-payment {
@@ -1239,7 +1240,7 @@ h1.main-title {
     }
 }
 
-/* ========= QRIS PAYMENT PAGE STYLES ========= */
+/* ========= QRIS PAYMENT PAGE ========= */
 
 #qris-payment-section {
     padding-top: 50px;
@@ -1542,7 +1543,7 @@ h1.main-title {
     }
 }
 
-/* ========= BANK TRANSFER PAGE STYLES ========= */
+/* ========= BANK TRANSFER PAGE ========= */
 
 #bank-transfer-section {
     padding-top: 80px;
@@ -1767,7 +1768,7 @@ h1.main-title {
     }
 }
 
-/* ========= ORDERS ADMIN PAGE STYLES ========= */
+/* ========= ORDERS ADMIN PAGE ========= */
 
 /* Main Content Orders */
 .main-content-orders {
@@ -1946,7 +1947,7 @@ h1.main-title {
     }
 }
 
-/* ========= MODAL CART - FIXED VERSION ========= */
+/* ========= MODAL CART ========= */
 
 /* Modal Settings */
 #cartpayment .modal-dialog {
@@ -2534,12 +2535,12 @@ h1.main-title {
     border-right: none;
 }
 
-/* UBAH: Kolom Jumlah body - center */
+/* Kolom Jumlah body - center */
 .product-table tbody td:nth-child(3) {
     text-align: center;
 }
 
-/* UBAH: Kolom Pengaturan body - geser ke kanan */
+/* Kolom Pengaturan body - geser ke kanan */
 .product-table tbody td:nth-child(5) {
     text-align: left;
     padding-left: 40px;
